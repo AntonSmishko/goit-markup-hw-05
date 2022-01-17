@@ -35,7 +35,7 @@
         <!-- ГЕРОЙ -->
     <section class="hero"><div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button></div>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button></div>
     </section>
     <!-- НАШИ ПРЕИМУЩЕСТВА -->
     <section class="section advantages"><div class="container">
@@ -182,7 +182,7 @@
     <!-- ПОДВАЛ -->
     <footer class="footer"><div class="container footer-wrapper"><div class="con">
         <a class="footer-logo" href="index.html"><span class="footer-element-logo">Web</span><span class="footer-second-element-logo">Studio</span></a>
-        <!-- <div class="footer-wrapper"> -->
+        
         <address class="address-link">
              <ul class="wrrap-link">
                 <li class="link-item"><a class="link-map" href="https://goo.gl/maps/BN2P9NeAtjH4bp3VA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -215,5 +215,12 @@
         
        </div> 
     </footer>
+    <!-- Модалка -->
+    <div class="backdrop is-hidden"data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close"data-modal-close>X</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
