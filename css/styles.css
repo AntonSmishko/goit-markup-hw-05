@@ -675,6 +675,10 @@ h1 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden .modal {
+  transform: scale(0.5) perspective(500px) rotateX(60deg) translate(-50%, -50%);
+}
+
 .modal {
   width: 528px;
   min-height: 581px;
@@ -686,7 +690,9 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) perspective(500px) rotateX(0deg);
+  transform-origin: left bottom;
+  transition: transform 1000ms;
 }
 .modal-close {
   width: 30px;
@@ -701,9 +707,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.is-hidden:hover {
 }
 
 .is-hidden {
