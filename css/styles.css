@@ -354,11 +354,12 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 27px 82px;
+  padding: 20px;
 
   font-weight: bold;
   font-size: 14px;
   line-height: 0.875;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -670,6 +671,8 @@ h1 {
   background: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -699,6 +702,10 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+.is-hidden:hover {
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
